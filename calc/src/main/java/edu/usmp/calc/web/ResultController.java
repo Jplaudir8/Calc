@@ -19,6 +19,25 @@ public class ResultController {
 	
 	@PostMapping("/calcInt")
 	public String submitForm(@ModelAttribute Result result) {
+		
+		switch(result.getOp()) {
+		case 'a':
+			result.setResult(result.getN1()+result.getN2());
+			break;
+		case 's':
+			result.setResult(result.getN1()-result.getN2());
+			break;
+		case 'm':
+			result.setResult(result.getN1()*result.getN2());
+			break;
+		case 'd':
+			result.setResult(result.getN1()/result.getN2());
+			break;
+		default:
+			result.setResult(0);
+			break;
+		}
+		
 		return "resultForm";
 	}
 	
