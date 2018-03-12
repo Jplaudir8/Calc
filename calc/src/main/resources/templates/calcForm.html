@@ -2,24 +2,28 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Calculator</title>
 </head>
-<body>
+<body style="text-align:center;margin-top:10%;background-color: #eaeaea">
+
 <form action="#" th:action="@{/calcInt}" th:object="${result}" method="post">
-	<p>Number1: <input type="number" th:field="*{n1}"/></p>
-	<p>Number2: <input type="number" th:field="*{n2}"/></p>
+	<img src="http://icons.iconarchive.com/icons/martz90/circle/512/calculator-icon.png" alt="calc-icon" style="height:80px"/>
+	<p>Number 1: <input type="number" th:field="*{n1}"/></p>
 	<p>
-	<select name="op">
+		<select name="op" style="font-size:20px">
   		<option th:value="a">+</option>
   		<option th:value="s">-</option>
   		<option th:value="m">*</option>
   		<option th:value="d">/</option>
-	</select>
+		</select>
 	</p>
+	<p>Number 2: <input type="number" th:field="*{n2}"/></p>
 	<p>
-		<input type="submit" value="Resolver"/>
-		<input type="reset" value="cancelar"/>
+		<input type="submit" value="Solve"/>
+		<input type="reset" value="Cancel"/>
 	</p>
+
+
 
 </form>
 </body>

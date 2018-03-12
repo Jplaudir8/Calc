@@ -2,10 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Result</title>
 </head>
-<body>
-<p>RESULTADO<p>
+<body style="text-align:center;margin-top:15%;background-color:#eaeaea;font-size:20px">
+<img src="http://icons.iconarchive.com/icons/martz90/circle/512/calculator-icon.png" alt="calc-icon" style="height:80px"/>
+<p style="font-weight: bold">Result<p>
 <p th:text="*{result.result}"></p>
+<a href="/calcInt">
+<button type="button">Return</button>
+</a>
 </body>
 </html>

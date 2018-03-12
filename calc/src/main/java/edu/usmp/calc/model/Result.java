@@ -2,27 +2,27 @@ package edu.usmp.calc.model;
 
 public class Result {
 
-	private double n1; 
-	private double n2;
-	private double result;
+	private long n1; 
+	private long n2;
+	private long result;
 	private char op;
 	
-	public double getN1() {
+	public long getN1() {
 		return n1;
 	}
-	public void setN1(double n1) {
+	public void setN1(long n1) {
 		this.n1 = n1;
 	}
-	public double getN2() {
+	public long getN2() {
 		return n2;
 	}
-	public void setN2(double n2) {
+	public void setN2(long n2) {
 		this.n2 = n2;
 	}
-	public double getResult() {
+	public long getResult() {
 		return result;
 	}
-	public void setResult(double result) {
+	public void setResult(long result) {
 		this.result = result;
 	}
 	public char getOp() {
