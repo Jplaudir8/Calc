@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" th:action="@{/calcInt}" th:object="${result}" method="post">
+	<p>Number1: <input type="number" th:field="*{n1}"/></p>
+	<p>Number2: <input type="number" th:field="*{n2}"/></p>
+	<p>
+	<select name="op">
+  		<option th:value="a">+</option>
+  		<option th:value="s">-</option>
+  		<option th:value="m">*</option>
+  		<option th:value="d">/</option>
+	</select>
+	</p>
+	<p>
+		<input type="submit" value="Resolver"/>
+		<input type="reset" value="cancelar"/>
+	</p>
+
+</form>
+</body>
+</html>
