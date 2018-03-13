@@ -31,7 +31,7 @@ public class ResultController {
 			result.setResult(result.getN1()*result.getN2());
 			break;
 		case 'd':
-			result.setResult(result.getN1()/result.getN2());
+			result.setResult(result.getN2() != 0.0 ? result.getN1() / result.getN2() : 0.0);
 			break;
 		default:
 			result.setResult(0);
